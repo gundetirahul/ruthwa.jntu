@@ -379,12 +379,41 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 	</section>
 	<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
-			<div class="modal-content modal-popup">
-				<a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
-				<h3 class="white">Sign Up</h3>
-				<form action="#" class="popup-form">
-					<input type="text" class="form-control form-white" placeholder="Full Name">
-					<input type="text" class="form-control form-white" placeholder="Email Address">
+			 <section class="login-bg d-flex justify-content-center align-items-center w-100 h-100">
+        <div class="card custom-card text-center">
+            <div class="card-body">
+                <h1 class="card-title mt-3 mb-2">SIGN UP</h1>
+                <form class="p-3" action="">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="usernametext" aria-describedby="emailHelp" placeholder="Full name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="emailtext" aria-describedby="emailHelp" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="passwordtext" aria-describedby="emailHelp" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-signup w-100" type="submit" name="formSubmitButton">Sign Up</button>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label for="agreeCheckbox"><input id="agreeCheckbox" type="checkbox">I agree to the </label><a href="">Terms of service?</a>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer bg-transparent border-transparent">
+                <div class="p-3">
+                    <p>Signup with external account</p>
+                    <div class="container">
+                        <div class="row">
+                            <button class="col btn btn-fb"><i class="g-icon fa fa-facebook"></i><span>Facebook</span></button>
+                            <button class="col btn btn-ln"><i class="g-icon fa fa-linkedin"></i><span>LinkedIn</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 					<div class="dropdown">
 						<button id="dLabel" class="form-control form-white dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							Know how it works!
